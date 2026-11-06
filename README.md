@@ -54,3 +54,8 @@ Each tab ends with a "What to tell judges" box. Turn on **Presenter notes** in t
 ## One implementation note
 
 For speed, the web app compiles circuit A into one equivalent unitary before running IQAE (`fast=True` in `build_estimation_problem`). It's the same operator, so the estimates match the notebook exactly (for example 0.065423 with 1,900 runs on the default network). The noise study uses the original gates, so its circuit depths match the notebook.
+
+
+## Interactive demo
+- Live app: https://YOUR-LINK.streamlit.app
+- App code: https://github.com/aditikumar812/q-resilience-app
