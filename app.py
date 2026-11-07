@@ -62,6 +62,8 @@ def callout(text, kind=""):
 
 
 def say(text):
+    if not st.session_state.get("presenter"):
+        return
     st.markdown(f'<div class="say"><b>What to tell judges</b>{text}</div>', unsafe_allow_html=True)
 
 
